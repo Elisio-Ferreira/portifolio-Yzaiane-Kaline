@@ -1,0 +1,201 @@
+/*  RESET  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/*  GERAL */
+body {
+  background: var(--fundo-branco);
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+
+}
+
+/*  CAPA */
+.capa {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100vh;
+  position: relative;
+  margin-bottom:5px;
+}
+
+.capa h1 {
+  font-size: 180px;
+  font-weight: 800;
+  color: var(--vermelho);
+}
+
+.namePosition{
+ 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+
+  
+}
+.capa .nome {
+  font-size: 28px;
+  color: var(--azul-claro);
+  font-weight: bold;
+   position: absolute;
+  top: 223px;
+  left: 78%;
+  
+}
+
+.capa .data {
+  position: absolute;
+  top: 60px;
+  right: 110px;
+  color: #333;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.capa .cargo {
+  position: absolute;
+  bottom: 60px;
+  left: 66px;
+  margin-top: 80px;
+  font-size: 17px;
+  color: #23384E;
+}
+
+/* SOBRE MIM */
+.sobre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--azul-claro);
+  padding: 60px 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.sobre .foto {
+  width: 320px;
+  height: 420px;
+  background: #ddd;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*
+Para colocar a foto depois, basta alterar assim:
+
+.sobre .foto {
+    background-image: url("minha-foto.png");
+}
+*/
+
+.sobre .texto {
+  max-width: 500px;
+  color: white;
+}
+
+.sobre h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* CRIAÇÃO E PROJETOS  */
+.criacao {
+  padding: 80px 40px;
+  text-align: center;
+  background: var(--fundo-claro);
+}
+
+.criacao h2 {
+  font-size: 48px;
+  color: var(--cinza-escuro);
+  margin-bottom: 30px;
+}
+
+.criacao p {
+  max-width: 900px;
+  margin: auto;
+  color: var(--cinza-texto);
+  font-size: 18px;
+}
+
+/*  IDENTIDADE VISUAL  */
+.identidade {
+  background-color: var(--vermelho);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+
+
+
+}
+
+.identidade h2 {
+  font-size: 30px;
+position: relative;
+right: 300px;
+color: var(--fundo-claro);
+}
+
+.circulo {
+  position: absolute;
+  background-color: var(--fundo-claro);
+  width: 750px;
+  height: 650px;
+  border-radius: 50%;
+
+  right: -400px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+
+/* RESPONSIVIDADE  */
+@media (max-width: 768px) {
+
+  .capa h1 {
+    font-size: 48px;
+  }
+
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre .texto {
+    text-align: center;
+  }
+
+  .criacao h2 {
+    font-size: 34px;
+  }
+
+  /*  .circulo {
+    width: 500px;
+    height: 500px;
+    top: calc(50-100%);
+
+    right: -80;
+  } */
+}
