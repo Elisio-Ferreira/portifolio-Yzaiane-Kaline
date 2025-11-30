@@ -1,0 +1,84 @@
+.sobre {
+    position: relative;
+    width: 100%;
+    min-height: 101vh;
+    background: #99AED3; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 80px;
+    overflow: visible; 
+}
+
+/* Bolha branca */
+.sobre .bolha {
+    position: absolute;
+    left: -300px;
+    top: 5vh;
+    width: 650px;
+    height: 700px;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+    
+}
+
+/* FOTO */
+.sobre .foto-img {
+    position: relative;
+    z-index: 2;
+    width: 420px;
+    margin-right: 60px;
+    left: -90px;
+    top: 10vh;
+}
+
+/* TEXTO */
+.sobre .texto {
+    max-width: 600px;
+    color: white;
+    z-index: 2;
+position: relative;
+left: 155px;
+}
+
+.sobre .texto h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sobre .texto p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .sobre {
+        flex-direction: column;
+        padding: 40px;
+        text-align: center;
+    }
+
+    .sobre .foto-img {
+        width: 300px;
+        margin: 0 auto 30px auto;
+    }
+
+    .sobre .bolha {
+        width: 400px;
+        height: 400px;
+        left: -100px;
+        top: -100px;
+    }
+
+    .sobre .texto h2 {
+        font-size: 36px;
+    }
+
+    .sobre .texto p {
+        font-size: 18px;
+    }
+}

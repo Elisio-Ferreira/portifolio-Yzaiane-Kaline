@@ -1,0 +1,33 @@
+/*  IDENTIDADE VISUAL  */
+.identidade {
+  background-color: var(--vermelho);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+
+
+
+}
+
+.identidade h2 {
+  font-size: 30px;
+position: relative;
+right: 200px;
+color: var(--fundo-claro);
+}
+
+.circulo {
+  position: absolute;
+  background-color: var(--fundo-claro);
+  width: 750px;
+  height: 650px;
+  border-radius: 50%;
+  right: -400px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
