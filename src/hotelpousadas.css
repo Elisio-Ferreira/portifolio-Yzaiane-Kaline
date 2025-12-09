@@ -1,20 +1,24 @@
 /*  HOTEL POUSADAS  */
-.hotel-pousadas{
-  background-color: #F2EFDE;
+.hotel-pousadas {
+  background-color: var(--fundo-branco);
   width: 100%;
   height: 100vh;
   display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
- 
-img{
-    width: 700px;
-    height: auto;
-   position: relative;
-   top: 60px;
-   right: 90px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
+.imgone {
+  width: 700px;
+  position: relative;
+  bottom: 20px;
 
+}
+
+.imgtwo {
+  width: 500px;
+  position: relative;
+  right: 300px;
+  top: 20px;
 }
