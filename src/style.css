@@ -6,12 +6,12 @@
   font-family: 'Arial', sans-serif;
 }
 
-#bordex {
-  border-bottom: 15px solid black;
+/*  #bordex {
+ border-top: 15px solid black;
   width: 100%;
   
-}
-
+} */
+ 
 /*  GERAL */
 body {
   background: var(--fundo-branco);
@@ -160,6 +160,7 @@ Para colocar a foto depois, basta alterar assim:
   height: 100%;
   position: relative;
   right: 520px;
+ 
 }
 
 .domo img {
@@ -176,6 +177,8 @@ Para colocar a foto depois, basta alterar assim:
   justify-content: center;
   align-items: center;
   position: relative;
+ 
+  
 
 }
 
@@ -205,6 +208,7 @@ Para colocar a foto depois, basta alterar assim:
   left: 520px;
   max-width: 300px;
   height: 100vh;
+  
 }
 
 .dupla {
